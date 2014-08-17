@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31A8FA9919A058EB00C6F7A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FA9819A058EB00C6F7A1 /* Foundation.framework */; };
+		31A8FA9B19A058EB00C6F7A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FA9A19A058EB00C6F7A1 /* CoreGraphics.framework */; };
+		31A8FA9D19A058EB00C6F7A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FA9C19A058EB00C6F7A1 /* UIKit.framework */; };
+		31A8FAA319A058EB00C6F7A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A8FAA119A058EB00C6F7A1 /* InfoPlist.strings */; };
+		31A8FAA519A058EB00C6F7A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A8FAA419A058EB00C6F7A1 /* main.m */; };
+		31A8FAA919A058EB00C6F7A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A8FAA819A058EB00C6F7A1 /* AppDelegate.m */; };
+		31A8FAAC19A058EB00C6F7A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A8FAAA19A058EB00C6F7A1 /* Main.storyboard */; };
+		31A8FAAF19A058EB00C6F7A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A8FAAE19A058EB00C6F7A1 /* ViewController.m */; };
+		31A8FAB119A058EB00C6F7A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A8FAB019A058EB00C6F7A1 /* Images.xcassets */; };
+		31A8FAB819A058EB00C6F7A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAB719A058EB00C6F7A1 /* XCTest.framework */; };
+		31A8FAB919A058EB00C6F7A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FA9819A058EB00C6F7A1 /* Foundation.framework */; };
+		31A8FABA19A058EB00C6F7A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FA9C19A058EB00C6F7A1 /* UIKit.framework */; };
+		31A8FAC219A058EB00C6F7A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A8FAC019A058EB00C6F7A1 /* InfoPlist.strings */; };
+		31A8FAC419A058EB00C6F7A1 /* BaiDuPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A8FAC319A058EB00C6F7A1 /* BaiDuPlayerTests.m */; };
+		31A8FAE719A064FC00C6F7A1 /* libASIHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAD919A064FC00C6F7A1 /* libASIHTTP.a */; };
+		31A8FAE819A064FC00C6F7A1 /* libBase64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADA19A064FC00C6F7A1 /* libBase64.a */; };
+		31A8FAE919A064FC00C6F7A1 /* libCyberPlayerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADB19A064FC00C6F7A1 /* libCyberPlayerController.a */; };
+		31A8FAEA19A064FC00C6F7A1 /* libCyberPlayerUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADC19A064FC00C6F7A1 /* libCyberPlayerUtils.a */; };
+		31A8FAEB19A064FC00C6F7A1 /* libGzipCompressor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADD19A064FC00C6F7A1 /* libGzipCompressor.a */; };
+		31A8FAEC19A064FC00C6F7A1 /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADE19A064FC00C6F7A1 /* libReachability.a */; };
+		31A8FAED19A064FC00C6F7A1 /* libSBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FADF19A064FC00C6F7A1 /* libSBJSON.a */; };
+		31A8FAF119A0678100C6F7A1 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAF019A0678100C6F7A1 /* OpenAL.framework */; };
+		31A8FAF319A0679000C6F7A1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAF219A0679000C6F7A1 /* OpenGLES.framework */; };
+		31A8FAF519A0679E00C6F7A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAF419A0679E00C6F7A1 /* QuartzCore.framework */; };
+		31A8FAF719A067A700C6F7A1 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAF619A067A700C6F7A1 /* libbz2.1.0.dylib */; };
+		31A8FAF919A067B000C6F7A1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAF819A067B000C6F7A1 /* libz.dylib */; };
+		31A8FAFB19A067B800C6F7A1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAFA19A067B800C6F7A1 /* AudioToolbox.framework */; };
+		31A8FAFD19A067C000C6F7A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAFC19A067C000C6F7A1 /* Security.framework */; };
+		31A8FAFF19A067CC00C6F7A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FAFE19A067CC00C6F7A1 /* MobileCoreServices.framework */; };
+		31A8FB0119A067D400C6F7A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FB0019A067D400C6F7A1 /* CFNetwork.framework */; };
+		31A8FB0319A067DF00C6F7A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A8FB0219A067DF00C6F7A1 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31A8FABB19A058EB00C6F7A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31A8FA8D19A058EB00C6F7A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31A8FA9419A058EB00C6F7A1;
+			remoteInfo = BaiDuPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31A8FA9519A058EB00C6F7A1 /* BaiDuPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A8FA9819A058EB00C6F7A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31A8FA9A19A058EB00C6F7A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31A8FA9C19A058EB00C6F7A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31A8FAA019A058EB00C6F7A1 /* BaiDuPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaiDuPlayer-Info.plist"; sourceTree = "<group>"; };
+		31A8FAA219A058EB00C6F7A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31A8FAA419A058EB00C6F7A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31A8FAA619A058EB00C6F7A1 /* BaiDuPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaiDuPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		31A8FAA719A058EB00C6F7A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		31A8FAA819A058EB00C6F7A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		31A8FAAB19A058EB00C6F7A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31A8FAAD19A058EB00C6F7A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31A8FAAE19A058EB00C6F7A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31A8FAB019A058EB00C6F7A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31A8FAB619A058EB00C6F7A1 /* BaiDuPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A8FAB719A058EB00C6F7A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		31A8FABF19A058EB00C6F7A1 /* BaiDuPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaiDuPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		31A8FAC119A058EB00C6F7A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31A8FAC319A058EB00C6F7A1 /* BaiDuPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuPlayerTests.m; sourceTree = "<group>"; };
+		31A8FAD819A064FC00C6F7A1 /* CyberPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyberPlayerController.h; sourceTree = "<group>"; };
+		31A8FAD919A064FC00C6F7A1 /* libASIHTTP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libASIHTTP.a; sourceTree = "<group>"; };
+		31A8FADA19A064FC00C6F7A1 /* libBase64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBase64.a; sourceTree = "<group>"; };
+		31A8FADB19A064FC00C6F7A1 /* libCyberPlayerController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCyberPlayerController.a; sourceTree = "<group>"; };
+		31A8FADC19A064FC00C6F7A1 /* libCyberPlayerUtils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCyberPlayerUtils.a; sourceTree = "<group>"; };
+		31A8FADD19A064FC00C6F7A1 /* libGzipCompressor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGzipCompressor.a; sourceTree = "<group>"; };
+		31A8FADE19A064FC00C6F7A1 /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libReachability.a; sourceTree = "<group>"; };
+		31A8FADF19A064FC00C6F7A1 /* libSBJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSBJSON.a; sourceTree = "<group>"; };
+		31A8FAF019A0678100C6F7A1 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		31A8FAF219A0679000C6F7A1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		31A8FAF419A0679E00C6F7A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		31A8FAF619A067A700C6F7A1 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		31A8FAF819A067B000C6F7A1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		31A8FAFA19A067B800C6F7A1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31A8FAFC19A067C000C6F7A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		31A8FAFE19A067CC00C6F7A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		31A8FB0019A067D400C6F7A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		31A8FB0219A067DF00C6F7A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31A8FA9219A058EB00C6F7A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FB0319A067DF00C6F7A1 /* SystemConfiguration.framework in Frameworks */,
+				31A8FB0119A067D400C6F7A1 /* CFNetwork.framework in Frameworks */,
+				31A8FAFF19A067CC00C6F7A1 /* MobileCoreServices.framework in Frameworks */,
+				31A8FAFD19A067C000C6F7A1 /* Security.framework in Frameworks */,
+				31A8FAFB19A067B800C6F7A1 /* AudioToolbox.framework in Frameworks */,
+				31A8FAF919A067B000C6F7A1 /* libz.dylib in Frameworks */,
+				31A8FAF719A067A700C6F7A1 /* libbz2.1.0.dylib in Frameworks */,
+				31A8FAF519A0679E00C6F7A1 /* QuartzCore.framework in Frameworks */,
+				31A8FAF319A0679000C6F7A1 /* OpenGLES.framework in Frameworks */,
+				31A8FA9B19A058EB00C6F7A1 /* CoreGraphics.framework in Frameworks */,
+				31A8FAF119A0678100C6F7A1 /* OpenAL.framework in Frameworks */,
+				31A8FAEA19A064FC00C6F7A1 /* libCyberPlayerUtils.a in Frameworks */,
+				31A8FAED19A064FC00C6F7A1 /* libSBJSON.a in Frameworks */,
+				31A8FAE919A064FC00C6F7A1 /* libCyberPlayerController.a in Frameworks */,
+				31A8FA9D19A058EB00C6F7A1 /* UIKit.framework in Frameworks */,
+				31A8FAEC19A064FC00C6F7A1 /* libReachability.a in Frameworks */,
+				31A8FAE719A064FC00C6F7A1 /* libASIHTTP.a in Frameworks */,
+				31A8FAEB19A064FC00C6F7A1 /* libGzipCompressor.a in Frameworks */,
+				31A8FA9919A058EB00C6F7A1 /* Foundation.framework in Frameworks */,
+				31A8FAE819A064FC00C6F7A1 /* libBase64.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A8FAB319A058EB00C6F7A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FAB819A058EB00C6F7A1 /* XCTest.framework in Frameworks */,
+				31A8FABA19A058EB00C6F7A1 /* UIKit.framework in Frameworks */,
+				31A8FAB919A058EB00C6F7A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A8FA8C19A058EB00C6F7A1 = {
+			isa = PBXGroup;
+			children = (
+				31A8FA9E19A058EB00C6F7A1 /* BaiDuPlayer */,
+				31A8FABD19A058EB00C6F7A1 /* BaiDuPlayerTests */,
+				31A8FA9719A058EB00C6F7A1 /* Frameworks */,
+				31A8FA9619A058EB00C6F7A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31A8FA9619A058EB00C6F7A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FA9519A058EB00C6F7A1 /* BaiDuPlayer.app */,
+				31A8FAB619A058EB00C6F7A1 /* BaiDuPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31A8FA9719A058EB00C6F7A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FB0219A067DF00C6F7A1 /* SystemConfiguration.framework */,
+				31A8FB0019A067D400C6F7A1 /* CFNetwork.framework */,
+				31A8FAFE19A067CC00C6F7A1 /* MobileCoreServices.framework */,
+				31A8FAFC19A067C000C6F7A1 /* Security.framework */,
+				31A8FAFA19A067B800C6F7A1 /* AudioToolbox.framework */,
+				31A8FAF819A067B000C6F7A1 /* libz.dylib */,
+				31A8FAF619A067A700C6F7A1 /* libbz2.1.0.dylib */,
+				31A8FAF419A0679E00C6F7A1 /* QuartzCore.framework */,
+				31A8FAF219A0679000C6F7A1 /* OpenGLES.framework */,
+				31A8FAF019A0678100C6F7A1 /* OpenAL.framework */,
+				31A8FA9819A058EB00C6F7A1 /* Foundation.framework */,
+				31A8FA9A19A058EB00C6F7A1 /* CoreGraphics.framework */,
+				31A8FA9C19A058EB00C6F7A1 /* UIKit.framework */,
+				31A8FAB719A058EB00C6F7A1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31A8FA9E19A058EB00C6F7A1 /* BaiDuPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FAA719A058EB00C6F7A1 /* AppDelegate.h */,
+				31A8FAA819A058EB00C6F7A1 /* AppDelegate.m */,
+				31A8FAAA19A058EB00C6F7A1 /* Main.storyboard */,
+				31A8FAAD19A058EB00C6F7A1 /* ViewController.h */,
+				31A8FAAE19A058EB00C6F7A1 /* ViewController.m */,
+				31A8FACD19A064FC00C6F7A1 /* libs */,
+				31A8FAB019A058EB00C6F7A1 /* Images.xcassets */,
+				31A8FA9F19A058EB00C6F7A1 /* Supporting Files */,
+			);
+			path = BaiDuPlayer;
+			sourceTree = "<group>";
+		};
+		31A8FA9F19A058EB00C6F7A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FAA019A058EB00C6F7A1 /* BaiDuPlayer-Info.plist */,
+				31A8FAA119A058EB00C6F7A1 /* InfoPlist.strings */,
+				31A8FAA419A058EB00C6F7A1 /* main.m */,
+				31A8FAA619A058EB00C6F7A1 /* BaiDuPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31A8FABD19A058EB00C6F7A1 /* BaiDuPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FAC319A058EB00C6F7A1 /* BaiDuPlayerTests.m */,
+				31A8FABE19A058EB00C6F7A1 /* Supporting Files */,
+			);
+			path = BaiDuPlayerTests;
+			sourceTree = "<group>";
+		};
+		31A8FABE19A058EB00C6F7A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FABF19A058EB00C6F7A1 /* BaiDuPlayerTests-Info.plist */,
+				31A8FAC019A058EB00C6F7A1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31A8FACD19A064FC00C6F7A1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FAD719A064FC00C6F7A1 /* Release-iphonesimulator */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		31A8FAD719A064FC00C6F7A1 /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				31A8FAD819A064FC00C6F7A1 /* CyberPlayerController.h */,
+				31A8FAD919A064FC00C6F7A1 /* libASIHTTP.a */,
+				31A8FADA19A064FC00C6F7A1 /* libBase64.a */,
+				31A8FADB19A064FC00C6F7A1 /* libCyberPlayerController.a */,
+				31A8FADC19A064FC00C6F7A1 /* libCyberPlayerUtils.a */,
+				31A8FADD19A064FC00C6F7A1 /* libGzipCompressor.a */,
+				31A8FADE19A064FC00C6F7A1 /* libReachability.a */,
+				31A8FADF19A064FC00C6F7A1 /* libSBJSON.a */,
+			);
+			path = "Release-iphonesimulator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31A8FA9419A058EB00C6F7A1 /* BaiDuPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A8FAC719A058EB00C6F7A1 /* Build configuration list for PBXNativeTarget "BaiDuPlayer" */;
+			buildPhases = (
+				31A8FA9119A058EB00C6F7A1 /* Sources */,
+				31A8FA9219A058EB00C6F7A1 /* Frameworks */,
+				31A8FA9319A058EB00C6F7A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaiDuPlayer;
+			productName = BaiDuPlayer;
+			productReference = 31A8FA9519A058EB00C6F7A1 /* BaiDuPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31A8FAB519A058EB00C6F7A1 /* BaiDuPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A8FACA19A058EB00C6F7A1 /* Build configuration list for PBXNativeTarget "BaiDuPlayerTests" */;
+			buildPhases = (
+				31A8FAB219A058EB00C6F7A1 /* Sources */,
+				31A8FAB319A058EB00C6F7A1 /* Frameworks */,
+				31A8FAB419A058EB00C6F7A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31A8FABC19A058EB00C6F7A1 /* PBXTargetDependency */,
+			);
+			name = BaiDuPlayerTests;
+			productName = BaiDuPlayerTests;
+			productReference = 31A8FAB619A058EB00C6F7A1 /* BaiDuPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31A8FA8D19A058EB00C6F7A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Vicent;
+				TargetAttributes = {
+					31A8FAB519A058EB00C6F7A1 = {
+						TestTargetID = 31A8FA9419A058EB00C6F7A1;
+					};
+				};
+			};
+			buildConfigurationList = 31A8FA9019A058EB00C6F7A1 /* Build configuration list for PBXProject "BaiDuPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31A8FA8C19A058EB00C6F7A1;
+			productRefGroup = 31A8FA9619A058EB00C6F7A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31A8FA9419A058EB00C6F7A1 /* BaiDuPlayer */,
+				31A8FAB519A058EB00C6F7A1 /* BaiDuPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31A8FA9319A058EB00C6F7A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FAB119A058EB00C6F7A1 /* Images.xcassets in Resources */,
+				31A8FAA319A058EB00C6F7A1 /* InfoPlist.strings in Resources */,
+				31A8FAAC19A058EB00C6F7A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A8FAB419A058EB00C6F7A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FAC219A058EB00C6F7A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31A8FA9119A058EB00C6F7A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FAAF19A058EB00C6F7A1 /* ViewController.m in Sources */,
+				31A8FAA919A058EB00C6F7A1 /* AppDelegate.m in Sources */,
+				31A8FAA519A058EB00C6F7A1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A8FAB219A058EB00C6F7A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A8FAC419A058EB00C6F7A1 /* BaiDuPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31A8FABC19A058EB00C6F7A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31A8FA9419A058EB00C6F7A1 /* BaiDuPlayer */;
+			targetProxy = 31A8FABB19A058EB00C6F7A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31A8FAA119A058EB00C6F7A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A8FAA219A058EB00C6F7A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31A8FAAA19A058EB00C6F7A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A8FAAB19A058EB00C6F7A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31A8FAC019A058EB00C6F7A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A8FAC119A058EB00C6F7A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31A8FAC519A058EB00C6F7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31A8FAC619A058EB00C6F7A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31A8FAC819A058EB00C6F7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaiDuPlayer/BaiDuPlayer-Prefix.pch";
+				INFOPLIST_FILE = "BaiDuPlayer/BaiDuPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiDuPlayer/libs/Release-iphoneos",
+					"$(PROJECT_DIR)/BaiDuPlayer/libs/Release-iphonesimulator",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		31A8FAC919A058EB00C6F7A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaiDuPlayer/BaiDuPlayer-Prefix.pch";
+				INFOPLIST_FILE = "BaiDuPlayer/BaiDuPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiDuPlayer/libs/Release-iphoneos",
+					"$(PROJECT_DIR)/BaiDuPlayer/libs/Release-iphonesimulator",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		31A8FACB19A058EB00C6F7A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BaiDuPlayer.app/BaiDuPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaiDuPlayer/BaiDuPlayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BaiDuPlayerTests/BaiDuPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31A8FACC19A058EB00C6F7A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BaiDuPlayer.app/BaiDuPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaiDuPlayer/BaiDuPlayer-Prefix.pch";
+				INFOPLIST_FILE = "BaiDuPlayerTests/BaiDuPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31A8FA9019A058EB00C6F7A1 /* Build configuration list for PBXProject "BaiDuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A8FAC519A058EB00C6F7A1 /* Debug */,
+				31A8FAC619A058EB00C6F7A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A8FAC719A058EB00C6F7A1 /* Build configuration list for PBXNativeTarget "BaiDuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A8FAC819A058EB00C6F7A1 /* Debug */,
+				31A8FAC919A058EB00C6F7A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A8FACA19A058EB00C6F7A1 /* Build configuration list for PBXNativeTarget "BaiDuPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A8FACB19A058EB00C6F7A1 /* Debug */,
+				31A8FACC19A058EB00C6F7A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31A8FA8D19A058EB00C6F7A1 /* Project object */;
+}
